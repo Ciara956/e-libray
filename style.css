@@ -1,0 +1,682 @@
+/* style.css - FutureLink Academy Enhanced Responsive Styles */
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.7;
+  color: #1f2937;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+section {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  }
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  font-weight: 600;
+  position: relative;
+  overflow: hidden;
+}
+
+button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+
+/* Header Section with Gradient */
+.head {
+  background: linear-gradient(135deg, #667eea 0%, #8a47cd 100%);
+  padding: 16px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.head::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+}
+
+.logo {
+  position: relative;
+  z-index: 2;
+}
+
+.logo img {
+  height: 70px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 25%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  border: 3px solid white;
+}
+
+.heading {
+  background: linear-gradient(135deg,#2563eb,#7c3aed );
+  color: white;
+  padding: 32px 16px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.heading::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+}
+.heading h1 {
+  font-size: 35px;
+  margin-bottom: 8px;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.heading h5 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.heading ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.heading ul li a {
+  color: white;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 50px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.1));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.heading ul li a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+}
+
+.heading ul li a:hover {
+  background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.2));
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.heading button,.contact-info button[type="button"],.btn-secondary {
+  background: linear-gradient(135deg, #f97316, #f43f5e);
+  color: white;
+  padding: 16px 32px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 18px;
+  box-shadow: 0 8px 20px rgba(239, 68, 68, 0.3);
+  position: relative;
+}
+
+.heading button:hover,.contact-info button[type="button"]:hover {
+  box-shadow: 0 12px 25px rgba(239, 68, 68, 0.4);
+  background: linear-gradient(135deg,  #ea580c, #ef4444);
+}
+.contact-info button[type="button"],.btn-secondary{
+  padding: 15px;
+  margin: 10px;
+  display:inline-flex;
+}
+#our-impact {
+  padding: 40px;
+  background-color: #f0f4f8;
+}
+
+#our-impact h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333333;
+}
+
+.impact-cards {
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
+  margin: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 300px;
+ text-align: center;
+  transition: transform 0.3s ease;
+  
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card p {
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #444444;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.card span {
+  font-weight: bold;
+  color: #666666;
+  font-size: 14px;
+}
+
+/* Common Section Styles */
+.message, .offer, .account, .welcome, .about-us, .contact-info, 
+.page-header, .resources, .partners, .findmentor {
+  padding: 48px 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.message, .page-header {
+  text-align: center;
+  position: relative;
+}
+
+.message::after, .page-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg,  #2563eb, #8b5cf6);
+  border-radius: 2px;
+}
+
+.message h1, .page-header h1 {
+  font-size: 40px;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg,  #2563eb,  #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+}
+
+.message p, .page-header p {
+  font-size: 19px;
+  color:  #4b5563;
+  max-width: 800px;
+  margin: 0 auto 32px;
+  line-height: 1.8;
+}
+
+.offer h3, .account h1, .welcome h2, .about-us h1, .contact-info h2 {
+  font-size: 29px;
+  margin-bottom: 24px;
+  background: linear-gradient(135deg, #2563eb,  #7c3aed);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+.offer ul {
+  margin: 24px 0;
+  padding-left: 0;
+}
+
+.offer ul li {
+  background: linear-gradient(135deg, #ffffff), #f8fafc;
+  padding: 16px 24px;
+  margin-bottom:12px;
+  border-radius:0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border-left:4px solid #10b981;
+  box-shadow:0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  display:flex;
+  align-items:center;
+  gap: 16px;
+}
+
+.offer ul li::before {
+  content: '✓';
+  color: #10b981;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.offer ul li:hover {
+  transform: translateX(10px);
+  box-shadow:  0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-left-color: #f97316;
+}
+
+/* Form Styles */
+.account form {
+  background: linear-gradient(135deg,#ffffff, #f8fafc);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  margin-top: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.account label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color:  #1f2937;
+  font-size: 16px;
+}
+
+.account select, .account input, .account textarea {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 24px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 16px;
+  background: #ffffff;
+}
+
+.account select:focus, .account input:focus, .account textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  transform: translateY(-2px);
+}
+
+.account textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.account button[type="submit"],.contact-info button[type="submit"] {
+  background: linear-gradient(135deg,#10b981,  #059669);
+  color: white;
+  padding: 20px 32px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 18px;
+  width: 30%;
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+}
+
+.account button[type="submit"]:hover ,.contact-info button[type="submit"]:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(16, 185, 129, 0.4);
+  background: linear-gradient(135deg,  #059669, #047857);
+}
+
+/* Card Layouts with Vibrant Colors */
+.mentor-grid, .resources-grid, .workshop-list, .video-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  margin-top: 48px;
+}
+.our-story,.career-talks,.interactive,.matching{
+  background: linear-gradient(135deg, #ffffff, #f8fafc);
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 90%;
+  margin: 20px;
+  margin-right: 20px;
+}
+.career-talks,.interactive,.matching{
+   grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.mentor-card, .resource-card, .workshop-card, .partner1, .partner2, .partner3,
+.career-goals, .resume-card, .interview-card, .financial-card, .coding-card, .communication-card {
+  background: linear-gradient(135deg, #ffffff, #f8fafc);
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+
+.mentor-card::before, .resource-card::before, .workshop-card::before {
+  content: '';
+  position: absolute;
+  height: 4px;
+  background: linear-gradient(90deg, #2563eb, #8b5cf6);
+}
+
+.mentor-card:hover, .resource-card:hover, .workshop-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow:  0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.mentor-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+.mentor-title {
+  color: #4b5563;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.mentor-expertise {
+  color:#8b5cf6;
+  font-style: italic;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.workshop-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 24px 0;
+  color: #6b7280;
+  font-size: 15px;
+  padding: 16px;
+  background: rgba(37, 99, 235, 0.05);
+  border: 12px;
+  border-left: 4px solid  #3b82f6;
+}
+
+/* Button Styles with Different Colors */
+.primary, .resource-card button, .workshop-card button {
+  background: linear-gradient(135deg, #2563eb,  #3b82f6);
+  color: white;
+  padding: 16px 32px;
+  border-radius: 50px;
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 16px;
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.3);
+}
+
+.primary:hover, .resource-card button:hover, .workshop-card button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.4);
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+}
+
+/* Video Styles */
+video {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 12px;
+  margin: 24px 0;
+  box-shadow:  0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+video:hover {
+  transform: scale(1.02);
+  box-shadow:  0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+.welcome video{
+width: 600px;
+height: 338px;
+}
+
+/* Footer Styles with Gradient */
+.foot-container {
+  background: linear-gradient(135deg,  #1f2937, #111827);
+  color: white;
+  padding: 48px 16px 16px;
+  margin-top: 64px;
+  position: relative;
+}
+
+.foot-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg,  #2563eb, #8b5cf6, #10b981,#f97316);
+}
+
+.foot {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.foot h3 {
+  margin-bottom: 24px;
+  color: #f59e0b;
+  font-weight: 700;
+  font-size: 21px;
+  padding-bottom: 20px;
+}
+
+.foot ul {
+  margin-bottom: 32px;
+}
+
+.foot ul li {
+  margin-bottom: 12px;
+}
+
+.foot ul li a {
+  color: #d1d5db;
+  padding: 4px 0;
+  display: inline-block;
+}
+
+.foot ul li a:hover {
+  color: #f59e0b;
+  transform: translateX(5px);
+}
+
+.copy {
+  text-align: center;
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #9ca3af;
+}
+
+/* Contact Form */
+.contact-info form {
+  background: linear-gradient(135deg,#ffffff, #f8fafc);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow:  0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  margin-top: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.contact-info label,.Social-meadia-links label,.Email label,.phone label {
+  display: block;
+  margin: 8px;
+  font-weight: 600;
+  color:#1f2937;
+}
+
+.contact-info select, .contact-info input {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 24px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.contact-info select:focus, .contact-info input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 32px 48px;
+  }
+  
+  .heading h1, .heading h5 {
+    margin-bottom: 0;
+  }
+  
+  .heading ul {
+    margin-bottom: 0;
+  }
+  
+  .message, .offer, .account, .welcome, .about-us, .contact-info, 
+  .page-header, .resources, .partners, .findmentor {
+    padding: 64px 32px;
+  }
+  .impact-cards{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .mentor-grid, .resources-grid, .workshop-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .video-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .foot-container > div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+  }
+  
+  .offer ul li {
+    padding: 20px 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mentor-grid, .resources-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .impact-cards{
+   display: block;
+  }
+ 
+.workshop-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .video-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .account form {
+    display: block;
+    
+  }
+  
+.account button{
+    width: 40%;
+}
+ 
+  
+  .foot-container > div {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+}
+
+/* Animation for cards */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mentor-card, .resource-card, .workshop-card {
+  animation: fadeInUp 0.6s ease-out;
+}
